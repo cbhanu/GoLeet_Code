@@ -6,9 +6,9 @@ import "fmt"
 func twoSum(nums []int, target int) []int {
 
 	//var ans []int // slice to store answer in
-	for i := range nums{
-		for j:=i+1;j<len(nums);j++{
-			if nums[i] + nums[j] == target{
+	for i, first := range nums{
+		for j:=i+1;j<len(nums);j++{ // for j, second := range nums[1:]
+			if first + nums[j] == target{
 				//return append(ans, i, j)
 				return []int{i,j}
 
