@@ -4,20 +4,19 @@ import "fmt"
 
 /* My Brute Force approach*/
 func twoSum(nums []int, target int) []int {
-
-	//var ans []int // slice to store answer in
+	//var ans []int
 	for i, first := range nums{
-		for j:=i+1;j<len(nums);j++{ // for j, second := range nums[1:]
+		for j:=i+1;j<len(nums);j++{   // or for j, second := range nums[1:]
 			if first + nums[j] == target{
 				//return append(ans, i, j)
 				return []int{i,j}
-
 			}
 		}
 
 	}
 	return nil
 }
+
 /* The following is the best solution in terms of runtime for Go*/
 
 func twoSum_best(nums []int, target int) []int {
