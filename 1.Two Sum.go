@@ -6,7 +6,7 @@ import "fmt"
 func twoSum(nums []int, target int) []int {
 	//var ans []int
 	for i, first := range nums{
-		for j:=i+1;j<len(nums);j++{   // or for j, second := range nums[1:]
+		for j:=i+1;j<len(nums);j++{   // or for j, second := range nums[1:] , return j+1 instead
 			if first + nums[j] == target{
 				//return append(ans, i, j)
 				return []int{i,j}
