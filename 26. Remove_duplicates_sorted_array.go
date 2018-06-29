@@ -1,5 +1,5 @@
+/* This solution of mine was the fastest as of 29th June, feel free to suggest improvements!*/
 package main
-
 import "fmt"
 
 func removeDuplicates(nums []int) int {
@@ -23,7 +23,7 @@ func removeDuplicates(nums []int) int {
 }
 
 func main() {
-	val_ip := []int{0,0,0,1,1,1,2,2,3,3,4,5, 6, 7, 7, 8}
+	val_ip := []int{0,0,0,1,1,1,2,2,3,3,4,5,5, 6, 7, 7, 8}
 	lenn := removeDuplicates(val_ip)
 	fmt.Println("Final answer: ")
 	for i:= 0; i < lenn; i++{
@@ -32,3 +32,16 @@ func main() {
 	fmt.Println("\nLength is:",lenn)
 
 }
+
+/* Output:
+[0 0 0 1 1 1 2 2 3 3 4 5 5 6 7 7 8]
+[0 1 1 1 2 2 3 3 4 5 5 6 7 7 8]
+[0 1 2 2 3 3 4 5 5 6 7 7 8]
+[0 1 2 3 3 4 5 5 6 7 7 8]
+[0 1 2 3 4 5 5 6 7 7 8]
+[0 1 2 3 4 5 6 7 7 8]
+Final answer:
+012345678
+Length is: 9
+
+ */
