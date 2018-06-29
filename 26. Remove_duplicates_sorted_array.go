@@ -1,4 +1,7 @@
 /* This solution of mine was the fastest as of 29th June, feel free to suggest improvements!*/
+/* This solution compares 1st value with second, then 3rd etc until it ceases to be the same value and slices the array
+ from the last similar element*/
+
 package main
 import "fmt"
 
@@ -23,7 +26,8 @@ func removeDuplicates(nums []int) int {
 }
 
 func main() {
-	val_ip := []int{0,0,0,1,1,1,2,2,3,3,4,5,5, 6, 7, 7, 8}
+    val_ip := []int{0,0,0,1,1,1,2,2,3,3,4,5,5, 6, 7, 7, 8}
+
 	lenn := removeDuplicates(val_ip)
 	fmt.Println("Final answer: ")
 	for i:= 0; i < lenn; i++{
