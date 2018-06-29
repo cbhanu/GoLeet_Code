@@ -16,7 +16,6 @@ func removeDuplicates(nums []int) int {
 				if nums[j+1] != nums[i] {
 					break
 				}else{cnt += 1}
-
 		}
 		fmt.Println(nums)
 		nums = append(nums[:i], nums[i+cnt:]...)
@@ -27,6 +26,7 @@ func removeDuplicates(nums []int) int {
 
 func main() {
     val_ip := []int{0,0,0,1,1,1,2,2,3,3,4,5,5, 6, 7, 7, 8}
+	//val_ip := []int{0,1,1,1}
 
 	lenn := removeDuplicates(val_ip)
 	fmt.Println("Final answer: ")
