@@ -1,4 +1,3 @@
-/* This solution of mine was the fastest as of 29th June, feel free to suggest improvements!*/
 /* This solution compares 1st value with second, then 3rd etc until it ceases to be the same value and slices the array
  from the last similar element*/
 

@@ -8,6 +8,7 @@ import (
 func merge(nums1 []int, m int, nums2 []int, n int)  {
 
 	// first add elements in nums2 to the end of nums1, // then sort the entire nums1
+
 	j:=0
 	for i:=m;i<len(nums1);i++{
 		nums1[i]=nums2[j]
@@ -16,7 +17,8 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 	// some sorting algorithm - QuickSort built-in
 	sort.Ints(nums1)
 
-	/* An inefficient implementation
+	/*
+	//An inefficient implementation :
 	if m==0{
 		 nums1 = append(nums1[:0],nums2...)
 	     return
@@ -44,6 +46,9 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 			cnt++
 		}
 	}
+
+	*/
+	/*
 	// Fastest , better implementation
 	index1 := m - 1
 	index2 := n - 1
@@ -67,8 +72,8 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 		index2--
 		index3--
 	}
-	*/
 
+	*/
 }
 
 func main() {

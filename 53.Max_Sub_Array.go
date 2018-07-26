@@ -13,8 +13,11 @@ func maxSubArray(nums []int) int {
 
 		//fmt.Println(i)
 		sum = append(sum,nums[i])
+
 		running_sum = Max(sum[i],running_sum+sum[i])
+
 		max_ans = Max(max_ans,running_sum)
+
 		for j:=i+1; j<len(nums)-1;j++{
 			sum[i] = sum[i] + nums[j]
 			max = Max(max,sum[i])
