@@ -11,16 +11,9 @@ func majorityElement(nums []int) int {
 		count = (len(nums)-1)/2
 	}
 	// make a map of value and its count
-
 	m := make(map[int]int)
 	for i := range(nums){
-		_, ok := m[nums[i]]
-		if ok{
-			m[nums[i]] += 1
-		}else{
-			fmt.Println("intialize counter")
-			m[nums[i]] = 1
-		}
+		m[nums[i]] += 1
 		if m[nums[i]] > count{
 			return nums[i]
 		}
@@ -29,7 +22,7 @@ func majorityElement(nums []int) int {
 
 }
 func main() {
-	ip := []int {3,2,3}
+	ip := []int {3,2,3,3}
 
 	ans := majorityElement(ip)
 
