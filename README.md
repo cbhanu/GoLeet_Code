@@ -1,4 +1,4 @@
-# GoLeet_Code
+## GoLeet_Code
 
 Getting started with Go and LeetCode both! 
 I will start off with the Easy category problems and then move on to the harder ones! 
